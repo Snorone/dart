@@ -1,0 +1,10 @@
+.counter-button{
+    size: 50%;
+    background-color: aqua;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+    padding: 1em;
+}
