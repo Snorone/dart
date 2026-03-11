@@ -1,16 +1,25 @@
 import { useState } from "react";
 import "./Counter.css";
 
-function Counter() {
-  const [count, setCount] = useState(5);
+interface CounterProps {
+  num: number;
+}
+
+function Counter({ num }: CounterProps) {
+  const [count, setCount] = useState(0);
   return (
     <>
-      <button
-        className="counter-button"
-        onClick={() => setCount((count) => count + 1)}
-      >
-        count is {count}
-      </button>
+      <div className="counter-box">
+        <button
+          className="counter-button"
+          onClick={() => setCount((count) => count + 1)}
+        >
+          {num}
+          <br />
+          <br />
+          {count}
+        </button>
+      </div>
     </>
   );
 }

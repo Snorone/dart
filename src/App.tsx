@@ -1,4 +1,4 @@
-import Counter from "../components/counter/Counter";
+import Dart from "../pages/Dart";
 import "./App.css";
 import NavBar from "../components/navbar/NavBar";
 
@@ -7,8 +7,7 @@ function App() {
     <div>
       <NavBar />
       <div className="main">
-        <Counter />
-        <Counter />
+        <Dart />
       </div>
     </div>
   );

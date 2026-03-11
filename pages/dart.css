@@ -1,0 +1,44 @@
+/* .button-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  .button-container > * {
+    flex: 0 0 calc(25% - 16px);
+  } */
+
+  .button-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    padding: 20px;
+  }
+  
+  /* Desktop – 4 kolumner */
+  .button-container > * {
+    flex: 0 0 calc(25% - 16px);
+  }
+  
+  /* Tablet – 3 kolumner */
+  @media (max-width: 900px) {
+    .button-container > * {
+      flex: 0 0 calc(33.33% - 16px);
+    }
+  }
+  
+  /* Small tablet – 2 kolumner */
+  @media (max-width: 600px) {
+    .button-container > * {
+      flex: 0 0 calc(50% - 16px);
+    }
+  }
+  
+  /* Mobile – 1 kolumn */
+  @media (max-width: 400px) {
+    .button-container > * {
+      flex: 0 0 100%;
+    }
+  }
