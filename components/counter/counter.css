@@ -16,3 +16,9 @@
 border: 2px solid black;
 border-radius: 8px;
 }
+
+.number-style {
+  color: black;
+  font-size: 24px;
+  font-weight: bold;
+}

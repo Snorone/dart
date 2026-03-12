@@ -6,7 +6,9 @@ export default function Dart() {
 
   return (
     <div className="main-div">
-      <h1>Dart</h1>
+      <div className="dart-board">
+        <h1>Dart</h1>
+      </div>
       <div className="button-container">
         {buttons.map((num) => (
           <Counter key={num} num={num} />

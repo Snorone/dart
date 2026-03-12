@@ -14,7 +14,7 @@ function Counter({ num }: CounterProps) {
           className="counter-button"
           onClick={() => setCount((count) => count + 1)}
         >
-          {num}
+          <p className="number-style">{num}</p>
           <br />
           <br />
           {count}
