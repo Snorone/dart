@@ -1,15 +1,19 @@
-import Dart from "../pages/Dart";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import NavBar from "./components/navbar/Navbar";
+import Home from "./pages/home/home";
+import AroundTheWorld from "./pages/aroundTheWorld/aroundTheWorld";
 import "./App.css";
-import NavBar from "../components/navbar/NavBar";
 
 function App() {
   return (
-    <div>
+    <BrowserRouter>
       <NavBar />
-      <div className="main">
-        <Dart />
-      </div>
-    </div>
+
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/aroundtheworld" element={<AroundTheWorld />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 

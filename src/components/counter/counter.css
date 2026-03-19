@@ -6,6 +6,7 @@
   background: #4caf50;
   color: white;
   cursor: pointer;
+  border-radius: 6px;
 }
 
 .btn:hover {
@@ -20,5 +21,11 @@ border-radius: 8px;
 .number-style {
   color: black;
   font-size: 24px;
+  font-weight: bold;
+}
+
+.checkmark {
+  color: green;
+  font-size: 18px;
   font-weight: bold;
 }
